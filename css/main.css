@@ -1,0 +1,21 @@
+html{
+  font-family: Tahoma;
+}
+
+.navItems{
+  text-decoration: none;
+}
+
+ .centr{
+   text-align: center;
+ }
+
+.para{
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px'
+}
+
+.content{
+   padding-top: 25px;
+}
