@@ -1,6 +1,6 @@
 # pizzatoa
 
-This is a pizza shop website.
+This is the pizza shop website. Get to choose your size, toppings or even the crust of your pizza. Design it yourself and get the order details before checkout.
 
 ## Prerequisites
 
@@ -19,6 +19,7 @@ The project is deployed. You can view it here: (https://iamelviskemboi.github.io
 * CSS
 * Bootstrap
 * JavaScript
+* jQuery
 
 ### Authors
 
