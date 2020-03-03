@@ -3,37 +3,128 @@
 <head>
   <title>Pizzatoa · home</title>
   <!-- Links to CSS files -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
+
 <body>
-  <!-- This is the navbar -->
-  <div class="navbar navbar-expand-md navbar-info sticky-top bg-warning">
-    <a href="https://iamelviskemboi.github.io/pizzatoa" class="navbar-brand text-dark">pizzatoa</a>
-  </div>
-  <!-- This is the content section -->
-  <section class="content">
-    <div class="container">
-      <div class="jumbotron bg-warning">
-      <h1 class="centr">Hi, welcome to pizzatoa</h1>
-      <p class="para text-secondary">Now don't go too far, I got some shit commig soon!</p>
-      <!-- The info -->
+  <!-- The background image -->
+  <div class="bg-img" style="background-image: url('img/pizza-3007395.jpg');">
+
+    <!-- This is the navbar -->
+    <div class="navbar navbar-expand-md navbar-info sticky-top bg-warning">
+      <a href="https://iamelviskemboi.github.io/pizzatoa" class="navbar-brand text-dark">pizzatoa</a>
     </div>
-      <div class="container content">
-        <div class="jumbotron bg-warning text-white">
-          <h3 class="centr">For real though!</h3>
+    <main role="main" class="container">
+      <!-- This is the content section -->
+      <div class="content">
+        <div class="jumbotron bg-warning">
+          <h1 class="centr">Hi, welcome to pizzatoa</h1>
+          <p class="para text-secondary">You a sucker for pizza? You're in the right place.</p
+          </div>
         </div>
-      </div>
-      <!-- End of container -->
-    </div>
-  </section>
-  <footer class="footer mt-auto py-3 bg-warning text-secondary">
-    <p class="para">&copy; 2020 pizzatoa &middot;</p>
-  </footer>
-</body>
-<!-- Links to JavaScript files-->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/style.js" type="text/javascript"></script>
-</html>
+
+          <div class="jumbotron bg-warning text-dark">
+            <h3 class="centr">Make an order</h3>
+            <form id="formTag">
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text"  class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <select id="noToppings" class="form-control">
+                  <option selected>Number of toppings</option>
+                  <option value= "1">1</option>
+                  <option value= "2">2</option>
+                  <option value = "3">3</option>
+                  <option value= "4">4</option>
+                </select>
+              </div>
+
+              <!-- Toppings -->
+              <div class="container text-dark space">
+                <h3>Choose your Toppings</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
+                  <label class="form-check-label" for="cheese">Cheese</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Pepperoni" name="toppingCheck" >
+                  <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Olives" name="toppingCheck" >
+                  <label class="form-check-label" for="Olives">Olives</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Chicken" name="toppingCheck" >
+                  <label class="form-check-label" for="Chicken">Chicken</label>
+                </div>
+              </div>
+
+              <div class="container text-dark space">
+                <h3>Take your crust pick</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
+                  <label class="form-check-label" for="cheese">Crispy</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
+                  <label class="form-check-label" for="cheese">Stuffed</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
+                  <label class="form-check-label" for="cheese">Glutten-free</label>
+                </div>
+              </div>
+
+              <div class="container text-dark space">
+                <h3>Now pick your size</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Small">
+                  <label class="form-check-label" for="sizeSmall">Small ($2)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option2" value="Medium">
+                  <label class="form-check-label" for="sizeMedium">Medium ($4)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sizePizza" id="option3" value="Large">
+                  <label class="form-check-label" for="sizeLarge">Large ($8)</label>
+                </div>
+                <div style="text-align:center">
+                  <button type="submit" class="btn btn-dark" id="btn-submit">Checkout</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        <!-- The Checkout bill -->
+        <div class="container centr">
+          <div class="checkout">
+            <div class="panel panel-default">
+              <div style="text-align: center;" class="panel-body">
+                <p><strong>You final bill is...</strong></p>
+                <p>Name: <span id="checkName"></span></p>
+                <p>Toppings: <span id="checkToppings"></span></p>
+                <p>Size: <span id="checkSize"></span></p>
+                <p>Total cost: <span id="checkTotalCost"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p class="para">&copy; 2020 pizzatoa &middot;</p>
+      </footer>
+
+    </body>
+
+    <!-- Links to JavaScript files-->
+    <script src="js/jquery-3.4.1.js"type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/style.js" type="text/javascript"></script>
+    </html>
