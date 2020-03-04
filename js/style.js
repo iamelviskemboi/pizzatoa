@@ -57,7 +57,7 @@ $(document).ready(function(){
     $("#checkEmail").text(userEmail);
     $("#checkSize").text(userSize);
 
-    pizzaItem = new pizzaToa(toppingArray,userSize, userEmail);
+    pizzaItem = new pizzaToa(toppingArray, userSize, userEmail);
 
     var toppingOrientAmount = pizzaItem.topppingAmount();
     var userSizeAmount = pizzaItem.userSizeAmount();
