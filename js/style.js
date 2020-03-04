@@ -54,9 +54,10 @@ $(document).ready(function(){
 
     var userSize =$("input:radio[name=sizePizza]:checked").val();
     $("#checkName").text(inputtedName);
+    $("#checkEmail").text(userEmail);
     $("#checkSize").text(userSize);
 
-    pizzaItem = new pizzaToa(toppingArray,userSize);
+    pizzaItem = new pizzaToa(toppingArray,userSize, userEmail);
 
     var toppingOrientAmount = pizzaItem.topppingAmount();
     var userSizeAmount = pizzaItem.userSizeAmount();
