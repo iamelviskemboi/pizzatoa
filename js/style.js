@@ -32,8 +32,8 @@ pizzaToa.prototype.sizeBasedAmount = function(){
 }
 
 pizzaToa.prototype.calculateCost = function(toppingsAmount, userSizeAmount){
-  var totalCost =toppingsAmount +userSizeAmount;
-  $(".displayTotalCost").html(totalCost);
+  var totalCost =toppingsAmount + userSizeAmount;
+  $("#displayTotalCost").html(totalCost);
 }
 var pizzaItem;
 
