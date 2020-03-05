@@ -1,6 +1,6 @@
 # pizzatoa
 
-This is the pizza shop website. 'toa' is the Scandinavian name for shop. Get to choose your size, toppings or even the crust of your pizza. Design it yourself and get the order details before checkout.
+This is the pizza shop website. 'toa' is the Scandinvian name for shop. Get to choose your size, toppings or even the crust of your pizza. Design it yourself and get the order details before checkout.
 
 ## Prerequisites
 
