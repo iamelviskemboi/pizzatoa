@@ -80,7 +80,7 @@ $(document).ready(function(){
     $("#checkSize").text(userSize);
     $("#checkCrust").text(userCrust);
 
-    pizzaItem = new pizzaToa(cheeseArray, userSize, userCrust);
+    pizzaItem = new pizzaToa(cheeseArray, sizePizza, sizeCrust);
 
     var toppingOrientAmount = pizzaItem.topppingAmount();
     var userSizeAmount = pizzaItem.userSizeAmount();
